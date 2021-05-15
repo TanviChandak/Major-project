@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+
+    <title>Document</title>
+    <link rel="stylesheet" href="Styles.css">
+</head>
+<body>
+    <!-- canvas Tag -->
+
+    <div class = "tool-bar">
+
+        <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <a href="#" class="navbar-brand">
+            <img  class = "tool" id="pencil" src="pencil.png">
+            <img class = "tool" id="eraser" src="eraser.png">   
+        </a>
+
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+          
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <div class="navbar-nav bh">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <img class = "tool" id="black1" src="black.gif">
+                </li>
+                <li class="nav-item">
+                    <img class = "tool" id="black2" src="black.gif">
+                </li>
+                <li class="nav-item">
+                    <img class = "tool" id="black3" src="black.gif">
+                </li>
+            </ul>
+
+          </div>
+
+
+          <div class="navbar-nav ml-auto">
+                  <a class="nav-link" href="#">
+
+                    <button type="button" class="btn btn-dark">undo</button>
+                    <button type="button" class="btn btn-dark">redo</button>
+                    <button type="button" class="btn btn-dark">Save</button>
+
+                  </a>
+          </div>
+          
+        <div class ="bh">
+            <form class="form-inline ml-auto">
+            <label for="colorpicker"></label>
+            <input class = "tool" type="color" id="colorpicker" value="#800000">
+    
+            <label for="colorpicker"></label>
+            <input class = "tool" type="color" id="colorpicker2" value="#e9e5de">
+            </form>
+        </div>
+    </div> 
+        </nav>
+
+    </div>
+    <canvas></canvas>
+    <script src="Script.js"></script>
+</body>
+</html>
